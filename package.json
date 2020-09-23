@@ -1,7 +1,7 @@
 {
-  "name": "pledge",
+  "name": "Coding Juniors",
   "private": true,
-  "description": "Code for cause pledge repository",
+  "description": "Coding Juniors Web repository",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -51,9 +51,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codeforcauseorg/pledge"
+    "url": "https://github.com/codingjuniors/codingjuniororg"
   },
   "bugs": {
-    "url": "https://github.com/codeforcauseorg/pledge/issues"
+    "url": "https://github.com/codingjuniors/codingjuniororg/issues"
   }
 }
