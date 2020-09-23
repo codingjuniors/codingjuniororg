@@ -1,5 +1,5 @@
 {
-  "name": "Coding Juniors",
+  "name": "CodingJuniors",
   "private": true,
   "description": "Coding Juniors Web repository",
   "version": "0.1.0",
@@ -22,7 +22,7 @@
     "@material-ui/icons": "^4.9.1",
     "@mui-treasury/components": "^1.9.1",
     "@mui-treasury/styles": "^1.13.0",
-    "firebase": "^7.19.1",
+    "firebase": "^7.21.0",
     "firebaseui": "^4.6.1",
     "gatsby": "^2.24.47",
     "gatsby-background-image": "^1.1.2",
