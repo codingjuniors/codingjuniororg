@@ -1,7 +1,7 @@
 {
-  "name": "pledge",
+  "name": "CodingJuniors",
   "private": true,
-  "description": "Code for cause pledge repository",
+  "description": "Coding Juniors Web repository",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -22,7 +22,7 @@
     "@material-ui/icons": "^4.9.1",
     "@mui-treasury/components": "^1.9.1",
     "@mui-treasury/styles": "^1.13.0",
-    "firebase": "^7.19.1",
+    "firebase": "^7.21.0",
     "firebaseui": "^4.6.1",
     "gatsby": "^2.24.47",
     "gatsby-background-image": "^1.1.2",
@@ -51,9 +51,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codeforcauseorg/pledge"
+    "url": "https://github.com/codingjuniors/codingjuniororg"
   },
   "bugs": {
-    "url": "https://github.com/codeforcauseorg/pledge/issues"
+    "url": "https://github.com/codingjuniors/codingjuniororg/issues"
   }
 }
