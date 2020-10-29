@@ -274,7 +274,6 @@ export default function CTA() {
                   display="flex"
                   flexDirection="column"
                 >
-                
                   <Card
                     className={classes.card}
                     style={{

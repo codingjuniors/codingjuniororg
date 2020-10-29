@@ -131,9 +131,10 @@ export default function Domains() {
               }}
             >
               <Box> Not assuming the basics to be clear we include </Box>
-              <Box>CODING with MATHS &amp; LOGIC BUILDING into our courses. </Box>
+              <Box>
+                CODING with MATHS &amp; LOGIC BUILDING into our courses.{" "}
+              </Box>
             </Typography>
-
 
             <Typography
               variant="h3"

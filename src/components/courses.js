@@ -453,9 +453,14 @@ const CourseCard = ({ course, slideImages }) => {
             <Typography>No upcoming</Typography>
           </Box>
 
-          <Box display="flex" flexDirection="row" justifyContent="center" style={{
-            marginTop:"16px"
-          }}>
+          <Box
+            display="flex"
+            flexDirection="row"
+            justifyContent="center"
+            style={{
+              marginTop: "16px",
+            }}
+          >
             {course.tags.map((tag, index) => (
               <Chip
                 label={
