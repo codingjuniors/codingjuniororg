@@ -1,17 +1,10 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  Grid,
-  makeStyles,
-  Typography,
-} from "@material-ui/core"
+import { Box, Grid, makeStyles, Typography } from "@material-ui/core"
 import { StaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
-import React from "react"
 import Img from "gatsby-image"
-import Btn from "./btn"
+import React from "react"
 import buttonData from "../data/bootcamp/apply"
+import Btn from "./btn"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -104,10 +97,6 @@ export default function Apply() {
 
         const bgImage = heroImages.nodes.find(
           node => node.childImageSharp.fluid.originalName === "back2.png"
-        )
-
-        const im = heroImages.nodes.find(
-          node => node.childImageSharp.fixed.originalName === "projects.png"
         )
 
         return (

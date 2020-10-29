@@ -1,17 +1,6 @@
-import React from "react"
-
+import { Grid, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
-import {
-  Grid,
-  Typography,
-  Box,
-  Card,
-  CardContent,
-  Hidden,
-  GridList,
-  GridListTile,
-} from "@material-ui/core"
-import useMediaQuery from "@material-ui/core/useMediaQuery"
+import React from "react"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -55,6 +44,7 @@ export default function ProjectCard() {
         </Grid>
         <Grid item xs={2}>
           <img
+            alt=""
             src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search-v2_297x176.jpg"
             className={classes.img}
           />

@@ -1,17 +1,15 @@
-import React from "react"
-
-import { makeStyles } from "@material-ui/core/styles"
 import {
-  Grid,
-  Typography,
   Box,
   Card,
   CardContent,
-  Hidden,
+  Grid,
   GridList,
   GridListTile,
+  Typography,
 } from "@material-ui/core"
+import { makeStyles } from "@material-ui/core/styles"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
+import React from "react"
 
 const useStyles = makeStyles(theme => ({
   icon: {

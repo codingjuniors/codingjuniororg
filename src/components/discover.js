@@ -1,20 +1,9 @@
-import React from "react"
-
+import { Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
-import {
-  Grid,
-  Typography,
-  Box,
-  Card,
-  CardContent,
-  Hidden,
-  GridList,
-  GridListTile,
-} from "@material-ui/core"
-import useMediaQuery from "@material-ui/core/useMediaQuery"
 import { StaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
-import { Link } from "react-router-dom"
+import React from "react"
+import { Link } from "gatsby"
 
 const useStyles = makeStyles(theme => ({
   root: {
