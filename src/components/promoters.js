@@ -1,27 +1,27 @@
-import React from "react"
-import PropTypes from "prop-types"
-import clsx from "clsx"
-import { Grid, Typography, makeStyles } from "@material-ui/core"
-import { associations } from "../data/associations"
-import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import clsx from 'clsx'
+import { Grid, Typography, makeStyles } from '@material-ui/core'
+import { associations } from '../data/associations'
+import Img from 'gatsby-image'
+import { StaticQuery, graphql } from 'gatsby'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    backgroundColor: "#FFF7F3",
+    backgroundColor: '#FFF7F3',
     padding: theme.spacing(5, 10, 5),
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down('md')]: {
       padding: theme.spacing(5, 3, 5),
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down('sm')]: {
       paddingTop: theme.spacing(6),
     },
-    color: "#000000",
+    color: '#000000',
   },
 
   centerCls: {
-    paddingLeft: "5px",
-    paddingRight: "5px",
+    paddingLeft: '5px',
+    paddingRight: '5px',
   },
 }))
 
@@ -59,16 +59,21 @@ function Promoters({ className, ...rest }) {
                 justifyContent="center"
                 alignItems="center"
               >
-                <Typography variant="h5" gutterBottom align="center" style={{
-                  marginBottom: "24px"
-                }}>
+                <Typography
+                  variant="h5"
+                  gutterBottom
+                  align="center"
+                  style={{
+                    marginBottom: '24px',
+                  }}
+                >
                   Our mentors are associated with
                 </Typography>
               </Grid>
 
               <Grid container>
                 {associations.map((association, index) => {
-                  const associationFileName = association["avatar"]
+                  const associationFileName = association['avatar']
                   const associationImage = associationImages.nodes.find(
                     node =>
                       node.childImageSharp.fixed.originalName ===
@@ -87,10 +92,10 @@ function Promoters({ className, ...rest }) {
                       align="center"
                     >
                       <Img
-                        alt={association["name"]}
+                        alt={association['name']}
                         fixed={associationImage.childImageSharp.fixed}
                         style={{
-                          margin: "16px"
+                          margin: '16px',
                         }}
                       ></Img>
                     </Grid>

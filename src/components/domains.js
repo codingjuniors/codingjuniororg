@@ -1,19 +1,19 @@
-import React from "react"
-import { makeStyles } from "@material-ui/core/styles"
-import { domains } from "../data/domains"
-import { Grid, Typography, Box } from "@material-ui/core"
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import { domains } from '../data/domains'
+import { Grid, Typography, Box } from '@material-ui/core'
 
-import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
+import Img from 'gatsby-image'
+import { StaticQuery, graphql } from 'gatsby'
 
 const useStyles = makeStyles(theme => ({
   icon: {
     marginRight: theme.spacing(2),
   },
   domainsContent: {
-    background: "",
+    background: '',
     padding: theme.spacing(5, 5, 5),
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down('md')]: {
       padding: theme.spacing(5, 3, 5),
     },
   },
@@ -22,53 +22,53 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: theme.spacing(8),
   },
   card: {
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    borderRadius: "10px",
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    borderRadius: '10px',
   },
   cardMedia: {
-    width: "100%",
-    height: "auto",
+    width: '100%',
+    height: 'auto',
     // paddingTop: "56.25%", // 16:9
   },
   cardContent: {
     flexGrow: 1,
   },
   chipActions: {
-    display: "block",
+    display: 'block',
   },
   chip: {
-    margin: "8px 0 3px 8px",
+    margin: '8px 0 3px 8px',
   },
   extraMargin: {
-    marginTop: "15px",
-    marginBottom: "0",
+    marginTop: '15px',
+    marginBottom: '0',
   },
   btn: {
-    textTransform: "none",
+    textTransform: 'none',
   },
   root: {
     backgroundColor: theme.palette.primary.main,
     paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(3),
-    "& dt": {
+    '& dt': {
       marginTop: theme.spacing(2),
     },
-    color: "#FFF",
+    color: '#FFF',
   },
   paddingCls: {
-    paddingLeft: "10px",
-    paddingRight: "10px",
+    paddingLeft: '10px',
+    paddingRight: '10px',
   },
   paddingClsxs: {
     padding: 0,
   },
   iconSize: {
-    fontSize: "32px",
+    fontSize: '32px',
   },
   text: {
-    color: "#FFFFFF",
+    color: '#FFFFFF',
   },
   avatarLarge: {
     width: theme.spacing(16),
@@ -77,10 +77,10 @@ const useStyles = makeStyles(theme => ({
   },
 
   avatarGrid: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 }))
 
@@ -116,7 +116,7 @@ export default function Domains() {
               align="center"
               color="textPrimary"
               style={{
-                marginBottom: "24px",
+                marginBottom: '24px',
               }}
             >
               We Start from Zero
@@ -126,21 +126,22 @@ export default function Domains() {
               variant="body1"
               align="center"
               style={{
-                marginBottom: "24px",
-                color: "#FF4C00",
+                marginBottom: '24px',
+                color: '#FF4C00',
               }}
             >
               <Box> Not assuming the basics to be clear we include </Box>
-              <Box>CODING with MATHS &amp; LOGIC BUILDING into our courses. </Box>
+              <Box>
+                CODING with MATHS &amp; LOGIC BUILDING into our courses.{' '}
+              </Box>
             </Typography>
-
 
             <Typography
               variant="h3"
               align="center"
               style={{
-                marginBottom: "24px",
-                color: "#ABABAB",
+                marginBottom: '24px',
+                color: '#ABABAB',
               }}
             >
               Courses Focused On
@@ -149,7 +150,7 @@ export default function Domains() {
 
           <Grid container lg={12}>
             {domains.map((domain, index) => {
-              const domainFileName = domain["img"]
+              const domainFileName = domain['img']
               const domainImage = data.domainImages.nodes.find(
                 node =>
                   node.childImageSharp.fixed.originalName === domainFileName

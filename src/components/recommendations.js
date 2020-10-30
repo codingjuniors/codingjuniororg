@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react'
 
-import { makeStyles } from "@material-ui/core/styles"
+import { makeStyles } from '@material-ui/core/styles'
 import {
   Grid,
   Typography,
@@ -9,11 +9,11 @@ import {
   CardContent,
   Avatar,
   Hidden,
-} from "@material-ui/core"
-import { StaticQuery, graphql } from "gatsby"
+} from '@material-ui/core'
+import { StaticQuery, graphql } from 'gatsby'
 
-import { recommendations } from "../data/recommendations"
-import Img from "gatsby-image"
+import { recommendations } from '../data/recommendations'
+import Img from 'gatsby-image'
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
   },
   heroContent: {
     padding: theme.spacing(10, 10, 10),
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down('md')]: {
       padding: theme.spacing(10, 3, 10),
     },
   },
@@ -33,57 +33,57 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: theme.spacing(8),
   },
   card: {
-    background: "#FFFBFA",
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    borderRadius: "10px",
+    background: '#FFFBFA',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    borderRadius: '10px',
   },
   cardMedia: {
-    width: "100%",
-    height: "auto",
+    width: '100%',
+    height: 'auto',
     // paddingTop: "56.25%", // 16:9
   },
   cardContent: {
     flexGrow: 1,
   },
   chipActions: {
-    display: "block",
+    display: 'block',
   },
   chip: {
-    margin: "8px 0 3px 8px",
+    margin: '8px 0 3px 8px',
   },
   extraMargin: {
-    marginTop: "15px",
-    marginBottom: "0",
+    marginTop: '15px',
+    marginBottom: '0',
   },
   btn: {
-    textTransform: "none",
+    textTransform: 'none',
   },
   root: {
     backgroundColor: theme.palette.primary.main,
     paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(3),
-    "& dt": {
+    '& dt': {
       marginTop: theme.spacing(2),
     },
-    color: "#FFF",
+    color: '#FFF',
   },
   paddingCls: {
-    paddingLeft: "10px",
-    paddingRight: "10px",
+    paddingLeft: '10px',
+    paddingRight: '10px',
   },
   paddingClsxs: {
     padding: 0,
   },
   iconSize: {
-    fontSize: "32px",
+    fontSize: '32px',
   },
   text: {
-    color: "#000",
+    color: '#000',
   },
   textHighlight: {
-    color: "#FF4C00",
+    color: '#FF4C00',
   },
   avatarLarge: {
     width: theme.spacing(6),
@@ -91,11 +91,11 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2),
   },
   recommenderTitle: {
-    color: "#FF4C00",
+    color: '#FF4C00',
   },
   recommenderDetail: {
-    color: "#9C9C9C",
-    textAlign: "center",
+    color: '#9C9C9C',
+    textAlign: 'center',
   },
 }))
 export default function Recommendations({ recommendationsImages }) {
@@ -123,15 +123,15 @@ export default function Recommendations({ recommendationsImages }) {
         const recommendationsImages = data.recommendationsImages
 
         const grayQuote = recommendationsImages.nodes.find(
-          node => node.childImageSharp.fixed.originalName === "grayQuote.png"
+          node => node.childImageSharp.fixed.originalName === 'grayQuote.png'
         )
 
         const highQuote = recommendationsImages.nodes.find(
-          node => node.childImageSharp.fixed.originalName === "highQuote.png"
+          node => node.childImageSharp.fixed.originalName === 'highQuote.png'
         )
 
         const topQuote = recommendationsImages.nodes.find(
-          node => node.childImageSharp.fixed.originalName === "topQuote.png"
+          node => node.childImageSharp.fixed.originalName === 'topQuote.png'
         )
 
         return (
@@ -141,7 +141,7 @@ export default function Recommendations({ recommendationsImages }) {
             <Grid
               container
               style={{
-                marginBottom: "50px",
+                marginBottom: '50px',
               }}
             >
               <Grid item lg={11} md={11} sm={12}>
@@ -162,7 +162,7 @@ export default function Recommendations({ recommendationsImages }) {
 
             <Grid container spacing={4}>
               {recommendations.map((recommendation, index) => {
-                const recommenderFileName = recommendation["avatar"]
+                const recommenderFileName = recommendation['avatar']
                 const recommenderImage = recommendationsImages.nodes.find(
                   node =>
                     node.childImageSharp.fixed.originalName ===
