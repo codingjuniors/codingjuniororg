@@ -1,7 +1,7 @@
-import React, { Fragment } from "react"
-import { makeStyles } from "@material-ui/core/styles"
-import ParallaxSlide from "@mui-treasury/components/slide/parallax"
-import PropTypes from "prop-types"
+import React, { Fragment } from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import ParallaxSlide from '@mui-treasury/components/slide/parallax'
+import PropTypes from 'prop-types'
 import {
   Grid,
   Typography,
@@ -11,12 +11,12 @@ import {
   Card,
   CardContent,
   Chip,
-} from "@material-ui/core"
-import { insideTriangleTabsStylesHook } from "@mui-treasury/styles/tabs"
-import useMediaQuery from "@material-ui/core/useMediaQuery"
+} from '@material-ui/core'
+import { insideTriangleTabsStylesHook } from '@mui-treasury/styles/tabs'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 
-import { StaticQuery, graphql } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
+import { StaticQuery, graphql } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -24,10 +24,10 @@ const useStyles = makeStyles(theme => ({
   },
   root: {
     padding: theme.spacing(10, 10, 10),
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    [theme.breakpoints.down("md")]: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    [theme.breakpoints.down('md')]: {
       padding: theme.spacing(10, 3, 10),
     },
   },
@@ -36,43 +36,43 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: theme.spacing(8),
   },
   card: {
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    borderRadius: "10px",
-    margin: "12px",
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    borderRadius: '10px',
+    margin: '12px',
   },
   cardMedia: {
-    width: "100%",
-    height: "auto",
+    width: '100%',
+    height: 'auto',
     // paddingTop: "56.25%", // 16:9
   },
   cardContent: {},
   chipActions: {
-    display: "block",
+    display: 'block',
   },
   chip: {
-    margin: "8px 0 3px 8px",
+    margin: '8px 0 3px 8px',
   },
   extraMargin: {
-    marginTop: "15px",
-    marginBottom: "0",
+    marginTop: '15px',
+    marginBottom: '0',
   },
   btn: {
-    textTransform: "none",
+    textTransform: 'none',
   },
   paddingCls: {
-    paddingLeft: "10px",
-    paddingRight: "10px",
+    paddingLeft: '10px',
+    paddingRight: '10px',
   },
   paddingClsxs: {
     padding: 0,
   },
   iconSize: {
-    fontSize: "32px",
+    fontSize: '32px',
   },
   text: {
-    color: "#FFFFFF",
+    color: '#FFFFFF',
   },
   avatarLarge: {
     width: theme.spacing(16),
@@ -81,34 +81,34 @@ const useStyles = makeStyles(theme => ({
   },
 
   avatarGrid: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "5px",
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '5px',
   },
 
   slide: {
     perspective: 0, // create perspective
-    overflow: "hidden",
+    overflow: 'hidden',
     // relative is a must if you want to create overlapping layers in children
-    position: "relative",
+    position: 'relative',
   },
   background: {
-    width: "100%",
-    height: "auto",
-    backgroundPosition: "bottom center",
-    backgroundSize: "cover",
+    width: '100%',
+    height: 'auto',
+    backgroundPosition: 'bottom center',
+    backgroundSize: 'cover',
   },
 }))
 
 export default function Courses() {
   const classes = useStyles()
-  const matches = useMediaQuery("(min-width:500px)")
+  const matches = useMediaQuery('(min-width:500px)')
 
   const tabsStyles = insideTriangleTabsStylesHook.useTabs()
   const tabItemStyles = insideTriangleTabsStylesHook.useTabItem({
-    bgColor: "#FF4C00",
+    bgColor: '#FF4C00',
   })
 
   const [value, setValue] = React.useState(0)
@@ -199,7 +199,7 @@ export default function Courses() {
                 align="center"
                 color="textPrimary"
                 style={{
-                  marginBottom: "20px",
+                  marginBottom: '20px',
                 }}
               >
                 Explore Our Upcoming Courses
@@ -212,8 +212,8 @@ export default function Courses() {
                 align="center"
                 color="textPrimary"
                 style={{
-                  marginBottom: "30px",
-                  color: "#848484",
+                  marginBottom: '30px',
+                  color: '#848484',
                 }}
               >
                 Our courses are designed according to his/her mental growth.
@@ -235,8 +235,8 @@ export default function Courses() {
                 variant="h1"
                 align="center"
                 style={{
-                  marginBottom: "50px",
-                  color: "#FF4C00",
+                  marginBottom: '50px',
+                  color: '#FF4C00',
                 }}
               >
                 Junior’s Class?
@@ -260,11 +260,11 @@ export default function Courses() {
                   onChange={handleChange}
                   aria-label="Tabs"
                   centered={true}
-                  variant={matches ? "standard" : "scrollable"}
+                  variant={matches ? 'standard' : 'scrollable'}
                   scrollButtons="auto"
                   classes={tabsStyles}
                   style={{
-                    marginBottom: "48px",
+                    marginBottom: '48px',
                   }}
                 >
                   <Tab
@@ -362,8 +362,8 @@ const CourseCard = ({ course, slideImages }) => {
     <Card
       className={classes.card}
       style={{
-        background: "#FFFCFB",
-        maxWidth: "350px",
+        background: '#FFFCFB',
+        maxWidth: '350px',
       }}
     >
       <CardContent className={classes.cardContent}>
@@ -372,15 +372,15 @@ const CourseCard = ({ course, slideImages }) => {
             display="flex"
             flexDirection="row"
             style={{
-              margin: "8px 0px 0px",
+              margin: '8px 0px 0px',
             }}
           >
             <Typography
               align="left"
               variant="body2"
               style={{
-                width: "50%",
-                color: "#0085FF",
+                width: '50%',
+                color: '#0085FF',
               }}
             >
               {course.difficulty}
@@ -389,7 +389,7 @@ const CourseCard = ({ course, slideImages }) => {
               align="right"
               variant="body2"
               style={{
-                width: "50%",
+                width: '50%',
               }}
             >
               <Box fontWeight={600}>{course.level}</Box>
@@ -400,8 +400,8 @@ const CourseCard = ({ course, slideImages }) => {
             variant="h5"
             align="left"
             style={{
-              marginBottom: "16px",
-              color: "#FF4C00",
+              marginBottom: '16px',
+              color: '#FF4C00',
             }}
           >
             {course.domain}
@@ -421,13 +421,13 @@ const CourseCard = ({ course, slideImages }) => {
             display="flex"
             flexDirection="row"
             style={{
-              marginTop: "4px 0px",
+              marginTop: '4px 0px',
             }}
           >
             <Typography
               style={{
-                marginRight: "8px",
-                color: "#A3A3A3",
+                marginRight: '8px',
+                color: '#A3A3A3',
               }}
             >
               Duration
@@ -439,13 +439,13 @@ const CourseCard = ({ course, slideImages }) => {
             display="flex"
             flexDirection="row"
             style={{
-              marginTop: "4px 0px",
+              marginTop: '4px 0px',
             }}
           >
             <Typography
               style={{
-                marginRight: "8px",
-                color: "#A3A3A3",
+                marginRight: '8px',
+                color: '#A3A3A3',
               }}
             >
               Upcoming
@@ -453,16 +453,21 @@ const CourseCard = ({ course, slideImages }) => {
             <Typography>No upcoming</Typography>
           </Box>
 
-          <Box display="flex" flexDirection="row" justifyContent="center" style={{
-            marginTop:"16px"
-          }}>
+          <Box
+            display="flex"
+            flexDirection="row"
+            justifyContent="center"
+            style={{
+              marginTop: '16px',
+            }}
+          >
             {course.tags.map((tag, index) => (
               <Chip
                 label={
                   <Typography
                     variant="body2"
                     style={{
-                      color: "#A6A6A6",
+                      color: '#A6A6A6',
                     }}
                   >
                     {tag}
@@ -470,7 +475,7 @@ const CourseCard = ({ course, slideImages }) => {
                 }
                 variant="outlined"
                 style={{
-                  margin: "4px",
+                  margin: '4px',
                 }}
               />
             ))}
@@ -482,8 +487,8 @@ const CourseCard = ({ course, slideImages }) => {
         display="flex"
         justifyContent="center"
         style={{
-          background: "#F1F1F1",
-          color: "#FF4C00",
+          background: '#F1F1F1',
+          color: '#FF4C00',
         }}
       >
         <Typography align="center">
@@ -516,10 +521,10 @@ const ParallaxCarousel = ({ slides, slideImages }) => {
             flexDirection="column"
             alignItems="bottom"
             style={{
-              height: "141px",
-              width: "100%",
-              color: "#FFFFFF",
-              padding: "8px",
+              height: '141px',
+              width: '100%',
+              color: '#FFFFFF',
+              padding: '8px',
             }}
           >
             <Typography variant="h4" align="left">
@@ -554,6 +559,6 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `scrollable-auto-tab-${index}`,
-    "aria-controls": `scrollable-auto-tabpanel-${index}`,
+    'aria-controls': `scrollable-auto-tabpanel-${index}`,
   }
 }

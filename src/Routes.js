@@ -1,18 +1,18 @@
 /* eslint-disable react/no-array-index-key */
-import React, { lazy, Suspense, Fragment } from "react"
-import { Switch, Redirect, Route } from "react-router-dom"
-import HomeLayout from "./layouts/HomeLayout"
-import AnotherLayout from "./layouts/AnotherLayout"
+import React, { lazy, Suspense, Fragment } from 'react'
+import { Switch, Redirect, Route } from 'react-router-dom'
+import HomeLayout from './layouts/HomeLayout'
+import AnotherLayout from './layouts/AnotherLayout'
 
 const routesConfig = [
   {
-    path: "/",
-    component: lazy(() => import("./layouts/HomeLayout")),
+    path: '/',
+    component: lazy(() => import('./layouts/HomeLayout')),
   },
   {
     exact: true,
-    path: "/another",
-    component: lazy(() => import("./layouts/AnotherLayout")),
+    path: '/another',
+    component: lazy(() => import('./layouts/AnotherLayout')),
   },
 ]
 
