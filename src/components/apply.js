@@ -133,7 +133,7 @@ export default function Apply() {
                         <span style={{ fontWeight: 600, fontSize: "17px" }}>
                           {data["text"].split(" ")[0]}{" "}
                         </span>
-                        {data["text"].split(" ").slice(1)}
+                        {data["text"].split(" ").slice(1).join(" ")}
                       </Typography>
                     </Box>
                   )
