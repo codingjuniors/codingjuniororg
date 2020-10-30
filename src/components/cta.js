@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react'
 
-import { makeStyles } from "@material-ui/core/styles"
+import { makeStyles } from '@material-ui/core/styles'
 import {
   Grid,
   Typography,
@@ -9,11 +9,11 @@ import {
   CardContent,
   TextField,
   Button,
-} from "@material-ui/core"
-import BackgroundImage from "gatsby-background-image"
+} from '@material-ui/core'
+import BackgroundImage from 'gatsby-background-image'
 
-import { StaticQuery, graphql } from "gatsby"
-import { withStyles } from "@material-ui/core/styles"
+import { StaticQuery, graphql } from 'gatsby'
+import { withStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
   },
   heroContent: {
     padding: theme.spacing(10, 10, 10),
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down('md')]: {
       padding: theme.spacing(10, 3, 10),
     },
   },
@@ -33,77 +33,77 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: theme.spacing(8),
   },
   card: {
-    display: "flex",
-    flexDirection: "column",
-    borderRadius: "5px",
+    display: 'flex',
+    flexDirection: 'column',
+    borderRadius: '5px',
   },
   cardMedia: {
-    width: "100%",
-    height: "auto",
+    width: '100%',
+    height: 'auto',
   },
   cardContent: {
     flexGrow: 1,
   },
   chipActions: {
-    display: "block",
+    display: 'block',
   },
   chip: {
-    margin: "8px 0 3px 8px",
+    margin: '8px 0 3px 8px',
   },
   extraMargin: {
-    marginTop: "15px",
-    marginBottom: "0",
+    marginTop: '15px',
+    marginBottom: '0',
   },
   btn: {
-    textTransform: "none",
-    height: "30px",
-    backgroundColor: "#FF4C00",
+    textTransform: 'none',
+    height: '30px',
+    backgroundColor: '#FF4C00',
   },
   input: {
-    backgroundColor: "rgba(255,255,255,0.5)",
-    borderRadius: "4px",
-    height: "30px",
-    width: "250px",
-    padding: "0px 10px",
+    backgroundColor: 'rgba(255,255,255,0.5)',
+    borderRadius: '4px',
+    height: '30px',
+    width: '250px',
+    padding: '0px 10px',
     marginRight: theme.spacing(1),
   },
   root: {
     backgroundColor: theme.palette.primary.main,
     paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(3),
-    "& dt": {
+    '& dt': {
       marginTop: theme.spacing(2),
     },
-    color: "#FFF",
+    color: '#FFF',
   },
   paddingCls: {
-    paddingLeft: "10px",
-    paddingRight: "10px",
+    paddingLeft: '10px',
+    paddingRight: '10px',
   },
   paddingClsxs: {
     padding: 0,
   },
   iconSize: {
-    fontSize: "32px",
+    fontSize: '32px',
   },
   text: {
-    color: "#FFFFFF",
+    color: '#FFFFFF',
   },
   background: {
-    width: "100%",
-    backgroundPosition: "bottom center",
-    backgroundSize: "cover",
+    width: '100%',
+    backgroundPosition: 'bottom center',
+    backgroundSize: 'cover',
   },
   textField: {
-    marginBottom: "16px",
+    marginBottom: '16px',
   },
   btn: {
-    textTransform: "none",
-    height: "40px",
-    width: "100px",
-    background: "#FF4C00",
-    "&:hover": {
-      backgroundColor: "rgba(255,76,0,0.5)",
+    textTransform: 'none',
+    height: '40px',
+    width: '100px',
+    background: '#FF4C00',
+    '&:hover': {
+      backgroundColor: 'rgba(255,76,0,0.5)',
     },
   },
 }))
@@ -112,21 +112,21 @@ export default function CTA() {
 
   const CssTextField = withStyles({
     root: {
-      "& label.Mui-focused": {
-        color: "#FF4C00",
+      '& label.Mui-focused': {
+        color: '#FF4C00',
       },
-      "& .MuiInput-underline:after": {
-        borderBottomColor: "yellow",
+      '& .MuiInput-underline:after': {
+        borderBottomColor: 'yellow',
       },
-      "& .MuiOutlinedInput-root": {
-        "& fieldset": {
-          borderColor: "#717171",
+      '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+          borderColor: '#717171',
         },
-        "&:hover fieldset": {
-          borderColor: "#000000",
+        '&:hover fieldset': {
+          borderColor: '#000000',
         },
-        "&.Mui-focused fieldset": {
-          borderColor: "#FF4C00",
+        '&.Mui-focused fieldset': {
+          borderColor: '#FF4C00',
         },
       },
     },
@@ -157,7 +157,7 @@ export default function CTA() {
         const ctaImages = data.ctaImages
 
         const bgImage = ctaImages.nodes.find(
-          node => node.childImageSharp.fluid.originalName === "cta_bg.png"
+          node => node.childImageSharp.fluid.originalName === 'cta_bg.png'
         )
 
         return (
@@ -186,9 +186,9 @@ export default function CTA() {
                   <Card
                     className={classes.card}
                     style={{
-                      margin: "16px",
-                      padding: "32px",
-                      borderRadius: "5px",
+                      margin: '16px',
+                      padding: '32px',
+                      borderRadius: '5px',
                     }}
                   >
                     <CardContent>
@@ -196,7 +196,7 @@ export default function CTA() {
                         variant="h3"
                         gutterBottom
                         style={{
-                          marginBottom: "32px",
+                          marginBottom: '32px',
                         }}
                       >
                         <Box fontWeight="fontWeightBold">
@@ -208,8 +208,8 @@ export default function CTA() {
                         variant="body1"
                         gutterBottom
                         style={{
-                          color: "#717171",
-                          marginBottom: "24px",
+                          color: '#717171',
+                          marginBottom: '24px',
                         }}
                       >
                         <Box>
@@ -274,22 +274,21 @@ export default function CTA() {
                   display="flex"
                   flexDirection="column"
                 >
-                
                   <Card
                     className={classes.card}
                     style={{
-                      margin: "16px 16px 32px",
-                      padding: "32px",
-                      borderRadius: "5px",
-                      background: "#FFFFFF",
-                      color: "#000000",
+                      margin: '16px 16px 32px',
+                      padding: '32px',
+                      borderRadius: '5px',
+                      background: '#FFFFFF',
+                      color: '#000000',
                     }}
                   >
                     <CardContent>
                       <Typography
                         variant="h3"
                         style={{
-                          marginBottom: "32px",
+                          marginBottom: '32px',
                         }}
                       >
                         <Box fontWeight="fontWeightBold">Where To Start?</Box>
@@ -299,8 +298,8 @@ export default function CTA() {
                         variant="body1"
                         gutterBottom
                         style={{
-                          color: "#717171",
-                          marginBottom: "24px",
+                          color: '#717171',
+                          marginBottom: '24px',
                         }}
                       >
                         <Box>
@@ -313,7 +312,7 @@ export default function CTA() {
                       <Typography
                         variant="body1"
                         style={{
-                          color: "#FF4C00",
+                          color: '#FF4C00',
                         }}
                       >
                         <Box fontWeight="fontWeightBold">Take a Test</Box>
@@ -323,18 +322,18 @@ export default function CTA() {
                   <Card
                     className={classes.card}
                     style={{
-                      margin: "16px",
-                      padding: "32px",
-                      borderRadius: "5px",
-                      background: "#000000",
-                      color: "#FFFFFF",
+                      margin: '16px',
+                      padding: '32px',
+                      borderRadius: '5px',
+                      background: '#000000',
+                      color: '#FFFFFF',
                     }}
                   >
                     <CardContent>
                       <Typography
                         variant="h3"
                         style={{
-                          marginBottom: "32px",
+                          marginBottom: '32px',
                         }}
                       >
                         <Box fontWeight="fontWeightBold">
@@ -346,8 +345,8 @@ export default function CTA() {
                         variant="body1"
                         gutterBottom
                         style={{
-                          color: "#BABABA",
-                          marginBottom: "24px",
+                          color: '#BABABA',
+                          marginBottom: '24px',
                         }}
                       >
                         <Box>
@@ -360,7 +359,7 @@ export default function CTA() {
                       <Typography
                         variant="body1"
                         style={{
-                          color: "#FF4C00",
+                          color: '#FF4C00',
                         }}
                       >
                         <Box fontWeight="fontWeightBold">Try Now !</Box>

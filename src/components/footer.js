@@ -1,76 +1,76 @@
-import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import PropTypes from "prop-types"
-import clsx from "clsx"
-import { Container, Grid, Typography, makeStyles } from "@material-ui/core"
-import { WhiteLogo } from "./logo"
-import List from "@material-ui/core/List"
-import ListItem from "@material-ui/core/ListItem"
-import ListItemIcon from "@material-ui/core/ListItemIcon"
-import ListItemText from "@material-ui/core/ListItemText"
-import { Link } from "gatsby"
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import PropTypes from 'prop-types'
+import clsx from 'clsx'
+import { Container, Grid, Typography, makeStyles } from '@material-ui/core'
+import { WhiteLogo } from './logo'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemIcon from '@material-ui/core/ListItemIcon'
+import ListItemText from '@material-ui/core/ListItemText'
+import { Link } from 'gatsby'
 
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from 'gatsby'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    background: "#000000",
+    background: '#000000',
     paddingTop: theme.spacing(12),
     paddingLeft: 70,
     paddingRight: 70,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down('md')]: {
       paddingLeft: 15,
       paddingRight: 15,
     },
-    color: "#FFFFFF",
+    color: '#FFFFFF',
   },
   input: {
     color: theme.palette.secondary.main,
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
   },
   registerBtn: {
     color: theme.palette.secondary.main,
-    backgroundColor: "#fff",
-    marginLeft: "10px",
-    padding: "7.5px 0px",
+    backgroundColor: '#fff',
+    marginLeft: '10px',
+    padding: '7.5px 0px',
   },
   iconBtn: {
-    display: "inline-flex",
-    justifyContent: "center",
-    flexWrap: "wrap",
-    border: "2px solid #fff",
+    display: 'inline-flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    border: '2px solid #fff',
   },
   socialIcon: {
     color: theme.palette.secondary.main,
-    backgroundColor: "#fff",
-    marginLeft: "10px",
-    padding: "6px 0px",
+    backgroundColor: '#fff',
+    marginLeft: '10px',
+    padding: '6px 0px',
   },
   logo: {
     width: 20,
-    height: "auto",
+    height: 'auto',
     // borderRadius: '50%'
   },
   iconSocialMedia: {
-    color: "#FFFFFF",
+    color: '#FFFFFF',
   },
   centerCls: {
-    paddingLeft: "5px",
-    paddingRight: "5px",
+    paddingLeft: '5px',
+    paddingRight: '5px',
   },
   circleCls: {
     // padding: '10px',
-    backgroundColor: "#fff",
-    color: "#000",
+    backgroundColor: '#fff',
+    color: '#000',
     // border: '2px solid red',
-    borderRadius: "50%",
+    borderRadius: '50%',
   },
   extraMarginTop: {
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(4),
   },
   extraMargin: {
-    marginTop: "10px",
+    marginTop: '10px',
   },
   copyRightPadding: {
     paddingTop: theme.spacing(8),
@@ -81,8 +81,8 @@ const useStyles = makeStyles(theme => ({
 function Footer({ className, logoWhiteImage, ...rest }) {
   const classes = useStyles()
   const flexContainer = {
-    display: "flex",
-    flexDirection: "row",
+    display: 'flex',
+    flexDirection: 'row',
     padding: 0,
   }
 
@@ -146,7 +146,7 @@ function Footer({ className, logoWhiteImage, ...rest }) {
                         target="_blank"
                       >
                         <ListItemIcon className={classes.iconSocialMedia}>
-                          <FontAwesomeIcon icon={["fab", "medium"]} size="lg" />
+                          <FontAwesomeIcon icon={['fab', 'medium']} size="lg" />
                         </ListItemIcon>
                         <ListItemText
                           className={classes.iconSocialMedia}
@@ -171,7 +171,7 @@ function Footer({ className, logoWhiteImage, ...rest }) {
                       >
                         <ListItemIcon className={classes.iconSocialMedia}>
                           <FontAwesomeIcon
-                            icon={["fab", "facebook"]}
+                            icon={['fab', 'facebook']}
                             size="lg"
                           />
                         </ListItemIcon>
@@ -184,7 +184,7 @@ function Footer({ className, logoWhiteImage, ...rest }) {
                       >
                         <ListItemIcon className={classes.iconSocialMedia}>
                           <FontAwesomeIcon
-                            icon={["fab", "twitter"]}
+                            icon={['fab', 'twitter']}
                             size="lg"
                           />
                         </ListItemIcon>
@@ -197,7 +197,7 @@ function Footer({ className, logoWhiteImage, ...rest }) {
                       >
                         <ListItemIcon className={classes.iconSocialMedia}>
                           <FontAwesomeIcon
-                            icon={["fab", "instagram"]}
+                            icon={['fab', 'instagram']}
                             size="lg"
                           />
                         </ListItemIcon>
@@ -210,7 +210,7 @@ function Footer({ className, logoWhiteImage, ...rest }) {
                       >
                         <ListItemIcon className={classes.iconSocialMedia}>
                           <FontAwesomeIcon
-                            icon={["fab", "youtube"]}
+                            icon={['fab', 'youtube']}
                             size="lg"
                           />
                         </ListItemIcon>
@@ -223,7 +223,7 @@ function Footer({ className, logoWhiteImage, ...rest }) {
                       >
                         <ListItemIcon className={classes.iconSocialMedia}>
                           <FontAwesomeIcon
-                            icon={["fab", "linkedin"]}
+                            icon={['fab', 'linkedin']}
                             size="lg"
                           />
                         </ListItemIcon>
@@ -238,12 +238,12 @@ function Footer({ className, logoWhiteImage, ...rest }) {
                   variant="body2"
                   color="textSecondary"
                 >
-                  {"Copyright © "}
-                  {new Date().getFullYear()}{" "}
+                  {'Copyright © '}
+                  {new Date().getFullYear()}{' '}
                   <Link color="inherit" href="https://codeforcause.org">
                     Code For Cause
                   </Link>
-                  {". All rights reserved."}
+                  {'. All rights reserved.'}
                 </Typography>
 
                 <Typography
@@ -255,7 +255,7 @@ function Footer({ className, logoWhiteImage, ...rest }) {
                   <Link color="inherit" to="/privacy">
                     Privacy Policy
                   </Link>
-                  {" | "}
+                  {' | '}
 
                   <Link color="inherit" to="/terms">
                     Terms of Use
