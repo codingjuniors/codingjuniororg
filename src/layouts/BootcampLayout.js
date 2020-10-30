@@ -8,7 +8,7 @@ import Footer from "../components/footer"
 import Header from "../components/header"
 import Hero from "../components/Hero/bootcampHero"
 
-const BootcampLayout = ({ data }) => (
+const BootcampLayout = () => (
   <React.Fragment>
     <Header />
     <Hero />

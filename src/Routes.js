@@ -11,11 +11,6 @@ const routesConfig = [
   },
   {
     exact: true,
-    path: "/bootcamps",
-    component: lazy(() => import("./layouts/BootcampLayout")),
-  },
-  {
-    exact: true,
     path: "/another",
     component: lazy(() => import("./layouts/AnotherLayout")),
   },
