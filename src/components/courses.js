@@ -98,6 +98,7 @@ const useStyles = makeStyles(theme => ({
     height: "auto",
     backgroundPosition: "bottom center",
     backgroundSize: "cover",
+    overflow: "hidden",
   },
 }))
 
@@ -355,7 +356,7 @@ export default function Courses() {
   )
 }
 
-const CourseCard = ({ course, slideImages }) => {
+export const CourseCard = ({ course, slideImages }) => {
   const classes = useStyles()
   return (
     <Card
