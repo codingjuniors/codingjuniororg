@@ -28,8 +28,7 @@ export default function Principles() {
             marginBottom: "32px",
           }}
         >
-          Courses designed minding{" "}
-          <span style={{ color: "#FF4C00" }}>THE FIRST PRINCIPLES </span>
+          Courses designed minding <span style={{color: "#FF4C00"}}>THE FIRST PRINCIPLES </span>
         </Typography>
       </Grid>
 
