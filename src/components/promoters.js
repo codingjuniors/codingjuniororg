@@ -59,14 +59,9 @@ function Promoters({ className, ...rest }) {
                 justifyContent="center"
                 alignItems="center"
               >
-                <Typography
-                  variant="h5"
-                  gutterBottom
-                  align="center"
-                  style={{
-                    marginBottom: "24px",
-                  }}
-                >
+                <Typography variant="h5" gutterBottom align="center" style={{
+                  marginBottom: "24px"
+                }}>
                   Our mentors are associated with
                 </Typography>
               </Grid>
@@ -95,7 +90,7 @@ function Promoters({ className, ...rest }) {
                         alt={association["name"]}
                         fixed={associationImage.childImageSharp.fixed}
                         style={{
-                          margin: "16px",
+                          margin: "16px"
                         }}
                       ></Img>
                     </Grid>

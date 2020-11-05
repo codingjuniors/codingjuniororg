@@ -54,6 +54,11 @@ const useStyles = makeStyles(theme => ({
     marginTop: "15px",
     marginBottom: "0",
   },
+  btn: {
+    textTransform: "none",
+    height: "30px",
+    backgroundColor: "#FF4C00",
+  },
   input: {
     backgroundColor: "rgba(255,255,255,0.5)",
     borderRadius: "4px",
@@ -269,6 +274,7 @@ export default function CTA() {
                   display="flex"
                   flexDirection="column"
                 >
+                
                   <Card
                     className={classes.card}
                     style={{
