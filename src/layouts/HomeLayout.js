@@ -2,8 +2,8 @@
 
 import Header from "../components/header"
 import Footer from "../components/footer"
-import Hero from "../components/hero"
-import CTA from "../components/cta"
+import Hero from "../components/Hero/mainHero"
+import CTA from "../components/cta/cta"
 import Team from "../components/team"
 import Promoters from "../components/promoters"
 import Courses from "../components/courses"

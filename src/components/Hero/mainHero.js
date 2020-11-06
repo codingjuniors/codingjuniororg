@@ -172,7 +172,8 @@ export default function Hero({ heroImages }) {
                     displayInline
                   >
                     <Box>
-                      Get Your <span style={{color: "#FF4C00"}}>Junior</span> Ready to Code for Future
+                      Get Your <span style={{ color: "#FF4C00" }}>Junior</span>{" "}
+                      Ready to Code for Future
                     </Box>
                   </Typography>
 
@@ -213,19 +214,25 @@ export default function Hero({ heroImages }) {
                       color="primary"
                       target="_blank"
                     >
-                      <Typography variant="body1">
-                          Submit
-                      </Typography>
+                      <Typography variant="body1">Submit</Typography>
                     </Button>
                   </Box>
                 </Grid>
               </Grid>
 
               <Hidden smDown>
-                <Grid item lg={4} md={4} sm={12} justifyContent="center" alignItems="center">
+                <Grid
+                  item
+                  lg={4}
+                  md={4}
+                  sm={12}
+                  justifyContent="center"
+                  alignItems="center"
+                >
                   <Card
                     className={classes.card}
-                    justifyContent="center" alignItems="center"
+                    justifyContent="center"
+                    alignItems="center"
                     style={{
                       height: "200px",
                     }}
