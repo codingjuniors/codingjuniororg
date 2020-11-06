@@ -121,28 +121,30 @@ export default function Choices() {
         return (
           <Grid container className={classes.domainsContent}>
             <Grid item lg={12} md={12} sm={12} xs={12}>
-            <Typography
-              variant="h2"
-              align="center"
-              color="textPrimary"
-              style={{
-                marginBottom: "24px",
-              }}
-            >
-              Make the Best Choice for Your Junior
-            </Typography>
+              <Typography
+                variant="h2"
+                align="center"
+                color="textPrimary"
+                style={{
+                  marginBottom: "24px",
+                }}
+              >
+                Make the Best Choice for Your Junior
+              </Typography>
 
-            <Typography
-              variant="body1"
-              align="center"
-              style={{
-                marginBottom: "24px",
-                color: "#FF4C00",
-              }}
-            >
-              <Box>Give your junior chance to try the best, easing the journey</Box>
-              <Box>to get him/her closer to their dream </Box>
-            </Typography>
+              <Typography
+                variant="body1"
+                align="center"
+                style={{
+                  marginBottom: "24px",
+                  color: "#FF4C00",
+                }}
+              >
+                <Box>
+                  Give your junior chance to try the best, easing the journey
+                </Box>
+                <Box>to get him/her closer to their dream </Box>
+              </Typography>
             </Grid>
 
             <Grid container lg={12} md={12} sm={12} xs={12}>

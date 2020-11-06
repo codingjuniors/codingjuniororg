@@ -1,22 +1,21 @@
-import React, { Fragment } from "react"
-import { makeStyles } from "@material-ui/core/styles"
-import ParallaxSlide from "@mui-treasury/components/slide/parallax"
-import PropTypes from "prop-types"
 import {
-  Grid,
-  Typography,
-  Tab,
-  Tabs,
   Box,
   Card,
   CardContent,
   Chip,
+  Grid,
+  Tab,
+  Tabs,
+  Typography,
 } from "@material-ui/core"
-import { insideTriangleTabsStylesHook } from "@mui-treasury/styles/tabs"
+import { makeStyles } from "@material-ui/core/styles"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
-
-import { StaticQuery, graphql } from "gatsby"
+import ParallaxSlide from "@mui-treasury/components/slide/parallax"
+import { insideTriangleTabsStylesHook } from "@mui-treasury/styles/tabs"
+import { graphql, StaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import PropTypes from "prop-types"
+import React, { Fragment } from "react"
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -453,9 +452,14 @@ const CourseCard = ({ course, slideImages }) => {
             <Typography>No upcoming</Typography>
           </Box>
 
-          <Box display="flex" flexDirection="row" justifyContent="center" style={{
-            marginTop:"16px"
-          }}>
+          <Box
+            display="flex"
+            flexDirection="row"
+            justifyContent="center"
+            style={{
+              marginTop: "16px",
+            }}
+          >
             {course.tags.map((tag, index) => (
               <Chip
                 label={
