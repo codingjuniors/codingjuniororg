@@ -22,7 +22,7 @@ function ButtonComponent({ className, title, ...rest }) {
   const classes = useStyles()
   return (
     <Button className={clsx(classes.btn, className)} {...rest}>
-      <Typography variant="h5">{title}</Typography>
+      <Typography variant="h5" style={{fontWeight: 500}}>{title}</Typography>
     </Button>
   )
 }

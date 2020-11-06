@@ -44,6 +44,7 @@
     "react-router-dom": "^5.2.0",
     "react-swipeable-views": "^0.13.9",
     "react-typography": "^0.16.19",
+    "swiper": "^6.3.5",
     "typography": "^0.16.19"
   },
   "devDependencies": {

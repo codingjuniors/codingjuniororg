@@ -302,7 +302,7 @@ function CTA({ className, ...rest }) {
                       size="large"
                     >
                       <Typography variant="h6" color="primary">
-                        Apply Now >
+                        Apply Now &gt;
                       </Typography>
                     </Button>
                   </Grid>
