@@ -1,6 +1,6 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core"
 import React from "react"
-import Hero from "../components/Hero/bootcampAndWebinars"
+import Hero from "../components/Hero/EventsHero"
 import BootCampCard from "../components/Events/bootcampCard"
 import Filter from "../components/Events/filter"
 import DiscoverCourse from "../components/Events/DiscoverCourses"
@@ -25,9 +25,7 @@ export default function EventsLayout() {
       <Header />
       <Hero
         title="Bootcamps & Webinars"
-        subtitleDesign={classes.root}
         subtitle="Learn The Exciting New tech. through Our Bootcamps"
-        backgroundImage="url(/images/hero/bootAndWeb.png)"
       />
       <Grid container className={classes.major}>
         <Grid item sm={3}>

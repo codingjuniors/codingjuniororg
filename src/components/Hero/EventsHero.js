@@ -42,9 +42,8 @@ const useStyles = makeStyles(theme => ({
 function Hero({
   title,
   subtitle,
-  subtitleDesign,
+  subtitleDesign="",
   className, // className
-  backgroundImage = null, // Link to the  background image if any
   component = null, // The Button or any component provided
   ...rest
 }) {
